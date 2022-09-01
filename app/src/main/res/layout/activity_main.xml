@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Kalkulator BMI"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="103dp"
+        android:text="Umur :"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/umur2"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="45dp"
+        android:layout_toEndOf="@+id/editUmur"
+        android:text="Tahun"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/umur3"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umur2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/editTB"
+        android:text="Cm"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/umur4"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umur3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:layout_toEndOf="@+id/editBB"
+        android:text="Kg"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editUmur"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@+id/umur"
+        android:layout_toRightOf="@+id/umur"
+        android:hint="Input Umur"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/umur"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="tinggi_badan :"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editTB"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/editUmur"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tb"
+        android:hint="tinggi badan"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/Bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTB"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:text="Berat badan :"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editBB"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTB"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tb"
+        android:hint="berat badan"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <RelativeLayout
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editBB"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/Btn_Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Hitung" />
+
+        <Button
+            android:id="@+id/Btn_Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/Btn_Hitung"
+            android:text="reset" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_below="@+id/hitung"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="hasil :"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/IUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hasil"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="21dp"
+            android:text="Umur Anda : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Umurhasil"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="59dp"
+            android:layout_toRightOf="@+id/IUmur"
+            android:hint="Umur" />
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="59dp"
+            android:layout_toRightOf="@+id/Umurhasil"
+            android:text="Tahun"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Itinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IUmur"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="tinggi : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tinggiHasil"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Umurhasil"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Itinggi"
+            android:hint="tinggi" />
+
+        <TextView
+            android:id="@+id/tinggi"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tahun"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tinggiHasil"
+            android:text="CM"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/IBB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Itinggi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Berat Badan : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BBHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tinggiHasil"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Itinggi"
+            android:hint="Berat Badan" />
+
+        <TextView
+            android:id="@+id/BB"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tinggi"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/BBHasil"
+            android:text="KG"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/IBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IBB"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="BMI Anda : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/BMIHasil"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BBHasil"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Itinggi"
+            android:hint="BMI " />
+
+        <TextView
+            android:id="@+id/IKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IBMI"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="kategori : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/KategoriHasil"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BMIHasil"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Itinggi"
+            android:hint="katergori " />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/klick_tugas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="163dp"
+        android:text="Tugas2" />
+
+
+</RelativeLayout>

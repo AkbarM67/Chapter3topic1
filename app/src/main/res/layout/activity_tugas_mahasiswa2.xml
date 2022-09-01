@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TugasMahasiswa2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Menghitung nilai akhir mahasiswa "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Nama :"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="Input Nama"
+        android:textSize="12dp"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="NIM    :"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Nim"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="-29dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:hint="Input Nim"
+        android:textSize="12dp"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="Nilai UAS :"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/UAS"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nim"
+        android:layout_marginLeft="-132dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/Nim"
+        android:hint="Input nilai UAS"
+        android:textSize="12dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="Nilai UTS :"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/UTS"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UAS"
+        android:layout_marginLeft="-132dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/UAS"
+        android:hint="Input nilai UTS"
+        android:textSize="12dp"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="Nilai Tugas :"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/Tugas"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UTS"
+        android:layout_marginLeft="-119dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@+id/UTS"
+        android:hint="Input Nilai Tugas"
+        android:textSize="12dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RelativeLayout
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tugas"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/Btn_Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Hitung" />
+
+        <Button
+            android:id="@+id/Btn_Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/Btn_Hitung"
+            android:text="reset" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_below="@+id/hitung"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="21dp"
+            android:text="Nama Mahasiswa : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HNamaM"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/text1"
+            android:hint="Hasil Nama" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="NIM                          : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HNim"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HNamaM"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text2"
+            android:hint="Hasil NIM"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="UAS                          : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HUAS"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HNim"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text2"
+            android:hint="Hasil UAS"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="UTS                          : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HUTS"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HUAS"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text2"
+            android:hint="Hasil UAS"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Tugas                      : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HTugas"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HUTS"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text5"
+            android:hint="Hasil Tugas"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Total                       : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HTotal"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HTugas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text5"
+            android:hint="Hasil Total"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Rata-Rata nilai       : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HRata"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HTotal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text7"
+            android:hint="Hasil Rata-Rata"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Nilai Huruf             : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/HNilai"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HRata"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text8"
+            android:hint="Hasil Nilai" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Status                    : "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Hstatus"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HNilai"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text8"
+            android:hint="Hasil Nilai" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
